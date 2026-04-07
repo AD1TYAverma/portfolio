@@ -1,0 +1,128 @@
+/* Variables */
+:root {
+    --primary-color: #6366f1;
+    --secondary-color: #a855f7;
+    --dark-bg: #0f172a;
+    --light-bg: #f8fafc;
+    --transition: all 0.3s ease;
+}
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #334155;
+    overflow-x: hidden;
+}
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.heading-line {
+    width: 60px;
+    height: 4px;
+    background: var(--primary-color);
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+/* Navbar */
+#mainNav {
+    transition: var(--transition);
+    padding: 20px 0;
+}
+
+#mainNav.navbar-scrolled {
+    background-color: var(--dark-bg);
+    padding: 10px 0;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.9), rgba(168, 85, 247, 0.9)), 
+                url('premium_photo.avif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Progress Bars */
+.progress {
+    height: 8px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: 10px;
+}
+
+/* Project Cards */
+.project-card {
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1) !important;
+}
+
+.project-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Form Styling */
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(99, 102, 241, 0.25);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Dark Mode Support */
+body.dark-mode {
+    background-color: #020617;
+    color: #f1f5f9;
+}
+
+body.dark-mode .bg-light {
+    background-color: #1e293b !important;
+}
+
+body.dark-mode .card {
+    background-color: #1e293b;
+    color: #f1f5f9;
+}
+
+body.dark-mode .text-muted {
+    color: #94a3b8 !important;
+}
+
+#fott-img{
+    background-image: url('v796-nunny-03b.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
